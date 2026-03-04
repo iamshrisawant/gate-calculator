@@ -1,6 +1,5 @@
 from flask import Blueprint, request, jsonify, render_template, send_file, current_app
 import os
-import json
 import io
 from .services import extraction, scoring, email_service
 
@@ -99,8 +98,6 @@ def upload_paper():
         else:
             # Prepare attachments for email (bytes)
             # No attachments sent to save memory on free tier
-            attachments = []
-            
             email_service.send_approval_email_async(year, code, attachments=None)
             return jsonify({"message": f"Submitted {code} ({year}) for review!"})
 

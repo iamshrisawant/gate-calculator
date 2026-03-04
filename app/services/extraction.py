@@ -1,8 +1,6 @@
 import pdfplumber
 import json
 import re
-import os
-import io
 
 def extract_marks_from_paper(source):
     """
@@ -65,7 +63,6 @@ def extract_answer_key(source, output_path=None, paper_code=None, paper_source=N
                     if len(row) >= 6:
                         # Old Row format: [Q.No, Session, Que.Type, Sec. Name, Key, Marks]
                         q_no = row[0]
-                        session = row[1]
                         q_type = row[2]
                         section = row[3]
                         key = row[4]

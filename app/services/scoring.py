@@ -60,7 +60,6 @@ def calculate_score(html_path, schema_data_or_path):
 
     for i, q_tbl in enumerate(questions):
         # 1. Extract Question ID and Status
-        q_id = None
         status = "Not Attempted"
         user_ans = None
         
@@ -73,7 +72,7 @@ def calculate_score(html_path, schema_data_or_path):
                 val = cols[k+1].text.strip()
                 
                 if "Question ID" in label:
-                    q_id = val
+                    pass
                 elif "Status" in label:
                     status = val
                 elif "Chosen Option" in label:
