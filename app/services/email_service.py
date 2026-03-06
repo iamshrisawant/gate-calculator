@@ -21,7 +21,7 @@ def send_approval_email(year, code, attachments=None):
         print("[EMAIL WARNING] SMTP credentials not set. Email skipped.")
         return
 
-    subject = f"GATE Predictor: New Submission {code} ({year})"
+    subject = f"GATE Calculator: New Submission {code} ({year})"
     body = f"""
     <h2>New Submission for Review</h2>
     <p>A new paper has been uploaded to the staging area.</p>
@@ -43,7 +43,7 @@ def send_approval_email(year, code, attachments=None):
     
     try:
         msg = MIMEMultipart()
-        msg['From'] = f"GATE Predictor <{SMTP_EMAIL}>"
+        msg['From'] = f"GATE Calculator <{SMTP_EMAIL}>"
         msg['To'] = SMTP_EMAIL
         msg['Subject'] = subject
         msg.attach(MIMEText(body, 'html'))
