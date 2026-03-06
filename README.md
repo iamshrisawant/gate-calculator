@@ -3,7 +3,7 @@
   <p><strong>A full-stack, automated response sheet analyzer that accurately parses, compares, and calculates GATE applicant scores against official answer keys in real-time.</strong></p>
   
   <p>
-    <a href="https://gate-predictor.onrender.com/"><strong>🔴 Live Demo</strong></a> •
+    <a href="https://gate-calculator.onrender.com/"><strong>🔴 Live Demo</strong></a> •
     <a href="#about-the-project">About</a> •
     <a href="#key-features">Features</a> •
     <a href="#technical-architecture">Architecture</a> •
@@ -53,7 +53,7 @@ Built as a robust backend-heavy application, it successfully transforms unstruct
 
 ## 🚀 Getting Started
 
-If you wish to run the project locally on your machine instead of using the [Live Version](https://gate-predictor.onrender.com/):
+If you wish to run the project locally on your machine instead of using the [Live Version](https://gate-calculator.onrender.com/):
 
 ### 1. Clone the repository
 ```bash
@@ -91,7 +91,7 @@ python run.py
 ## 📈 Status
 
 **Production Deployed.** 
-Currently live at [gate-predictor.onrender.com](https://gate-predictor.onrender.com/). Equipped to process GATE CS, DA, and EC schemas among others, adaptable for multiple years seamlessly utilizing the robust PDF extraction engine.
+Currently live at [gate-calculator.onrender.com](https://gate-calculator.onrender.com/). Equipped to process GATE CS, DA, and EC schemas among others, adaptable for multiple years seamlessly utilizing the robust PDF extraction engine.
 
 ---
 
